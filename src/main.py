@@ -13,7 +13,21 @@ class TimerApp(App):
     STOP = 'Stop'
     
     COMMANDS=[] 
-    CSS_PATH='timer-app.tcss' 
+    CSS="""
+    #main-container {
+        align: center middle;
+    }
+
+    #timer-container {
+        width: 70%; height: 70%;
+        align: center middle;
+    }
+
+    #timer-buttons {
+        align: center middle;
+        layout: horizontal;
+    }
+    """
     
     def __init__(self):
         super().__init__()
