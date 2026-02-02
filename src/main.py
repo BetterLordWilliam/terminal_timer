@@ -99,6 +99,7 @@ class TimerApp(App):
                     a = b   # update the last time
                 if worker.is_cancelled:
                     break
+                
             if not worker.is_cancelled: # lazy way to prevent double calling, do I even care if that happens?
                 self.__finished()
                 self.__disengaged()
